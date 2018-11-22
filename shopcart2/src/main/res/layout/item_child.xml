@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <CheckBox
+        android:id="@+id/cche"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:focusable="false" />
+
+    <ImageView
+        android:id="@+id/imageV_aa"
+        android:layout_width="66dp"
+        android:layout_height="66dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/cche"
+        android:padding="10dp" />
+
+
+    <TextView
+        android:id="@+id/tv_goodsname"
+        android:layout_width="88dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/imageV_aa"
+        android:ellipsize="end"
+        android:lines="2" />
+
+    <TextView
+        android:id="@+id/tv_goodsprice"
+        android:layout_width="88dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_goodsname"
+        android:layout_toRightOf="@+id/imageV_aa" />
+
+    <com.baway.shopcart2.AddAndSubView
+        android:id="@+id/addandsub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true" />
+</RelativeLayout>
